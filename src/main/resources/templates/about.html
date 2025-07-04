@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header('Tentang')">
+    <style>
+        body {
+            background: linear-gradient(to right, #f8f9fa, #e0eafc);
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .card-about {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .btn-secondary {
+            border-radius: 25px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .emoji {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-light">
+<div class="container py-5">
+    <div class="card-about mx-auto" style="max-width: 600px;">
+        <h1 class="text-center mb-4">Tentang <span class="text-primary">Budget Planner</span></h1>
+        <p class="lead text-center">Aplikasi ini dibuat untuk membantu mahasiswa mengelola pengeluaran harian secara sederhana dan efisien.</p>
+        <hr>
+        <p class="text-center">Nama: <strong>M. Haidar Dzaky</strong> </span></p>
+        <p class="text-center">NIM: <strong>20230040099</strong></p>
+        <p class="text-center">Kelas: <strong>TI23G</strong></p>
+        <div class="text-center mt-4">
+            <a href="/" class="btn btn-secondary">⬅ Kembali ke Beranda</a>
+        </div>
+    </div>
+</div>
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>

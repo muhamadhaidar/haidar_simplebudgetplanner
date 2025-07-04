@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header('Atur Anggaran')"></head>
+<body class="bg-light">
+<div class="container py-5">
+    <h2 class="mb-4 text-center">Atur Total Anggaran</h2>
+
+    <form th:action="@{/anggaran/atur}" method="post" class="card p-4 shadow-sm bg-white">
+        <div class="mb-3">
+            <label class="form-label">Nominal Anggaran (Rp)</label>
+            <input type="number" name="nominal" class="form-control" placeholder="Masukkan jumlah anggaran" required />
+        </div>
+        <div class="text-end">
+            <button type="submit" class="btn btn-primary">+ Tambah</button>
+            <a th:href="@{/}" class="btn btn-secondary">Kembali</a>
+        </div>
+    </form>
+</div>
+
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>
